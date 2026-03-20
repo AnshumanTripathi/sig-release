@@ -1,0 +1,16 @@
+pr: 131846
+releasenote:
+  text: Adjust the expected and actual parameters of the unit test Equal function
+    to the correct order
+  documentation: []
+  author: yangjunmyfm192085
+  areas:
+  - kubelet
+  kinds:
+  - cleanup
+  sigs:
+  - node
+  feature: false
+  action_required: false
+  do_not_publish: true
+pr_body: ""

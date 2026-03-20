@@ -1,0 +1,17 @@
+pr: 135729
+releasenote:
+  text: When kubelet configuration seccompDefault is set to true, e2e test cases should
+    support seccomp default, which is unconfined [LinuxOnly] Executionis  successful.
+  documentation: []
+  author: yangjunmyfm192085
+  areas:
+  - test
+  kinds:
+  - bug
+  sigs:
+  - node
+  - testing
+  feature: false
+  action_required: false
+  do_not_publish: true
+pr_body: ""

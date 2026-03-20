@@ -1,0 +1,14 @@
+pr: 134852
+releasenote:
+  text: Enable nomaps for Kubernetes API Linter with all the exceptions
+  documentation: []
+  author: MatteoFari
+  areas: []
+  kinds:
+  - cleanup
+  sigs:
+  - architecture
+  feature: false
+  action_required: false
+  do_not_publish: true
+pr_body: ""

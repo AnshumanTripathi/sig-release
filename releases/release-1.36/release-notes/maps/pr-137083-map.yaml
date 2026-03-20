@@ -1,0 +1,21 @@
+pr: 137083
+releasenote:
+  text: Added PlacementGenerate extension point to the scheduler. It is used to generate
+    placements for placement-based pod group scheduling. Its use is guarded by the
+    TopologyAwareWorkloadScheduling feature gate.
+  documentation:
+  - description: '[KEP]'
+    url: https://github.com/kubernetes/enhancements/blob/ee22fae0f678e184400bcd4fd3281c2743be296b/keps/sig-scheduling/5732-topology-aware-workload-scheduling/README.md?plain=1#L426
+    type: KEP
+  author: brejman
+  areas:
+  - code-generation
+  - workload-aware
+  kinds:
+  - api-change
+  sigs:
+  - scheduling
+  feature: false
+  action_required: false
+  do_not_publish: false
+pr_body: ""
