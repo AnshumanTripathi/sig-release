@@ -2986,6 +2986,31 @@
     "duplicate": true,
     "is_mapped": true
   },
+  "136254": {
+    "commit": "338a3bcef88f4991cee61ee03105f058b34eb276",
+    "text": "Extended `PostFilterResult` with a list of Pods that the `PostFilter` plugin preempted. ACTION REQUIRED: `PostFilter` plugin implementations need to be updated to return the preempted Pods (if any) in the `PostFilterResult` from the `PostFilter` method; returning nil means the plugin did not preempt any Pods at all.",
+    "markdown": "Extended `PostFilterResult` with a list of Pods that the `PostFilter` plugin preempted. ACTION REQUIRED: `PostFilter` plugin implementations need to be updated to return the preempted Pods (if any) in the `PostFilterResult` from the `PostFilter` method; returning nil means the plugin did not preempt any Pods at all. ([#136254](https://github.com/kubernetes/kubernetes/pull/136254), [@tosi3k](https://github.com/tosi3k))",
+    "documentation": [
+      {
+        "description": "[KEP]",
+        "url": "https://github.com/kubernetes/enhancements/tree/master/keps/sig-scheduling/4671-gang-scheduling",
+        "type": "KEP"
+      }
+    ],
+    "author": "tosi3k",
+    "author_url": "https://github.com/tosi3k",
+    "pr_url": "https://github.com/kubernetes/kubernetes/pull/136254",
+    "pr_number": 136254,
+    "kinds": [
+      "feature"
+    ],
+    "sigs": [
+      "scheduling"
+    ],
+    "feature": true,
+    "action_required": true,
+    "is_mapped": true
+  },
   "136256": {
     "commit": "9d5db065bd1c9e0a17a91d2aa21dedc8dab6d673",
     "text": "Adds the `ExtendWebSocketsToKubelet` feature gate (Beta, default true in v1.36). When enabled, the API server proxies WebSocket exec/attach/portforward requests directly to the kubelet rather than translating or tunneling them at the API server. The kubelet now handles WebSocket-to-SPDY stream translation (exec/attach) and WebSocket tunneling (portforward) using the same handlers previously used at the API server. The kubelet advertises support for this feature to the API server via the `NodeDeclaredFeatures` mechanism; the API server only proxies directly to a kubelet that has advertised support. Two new ALPHA metrics are added to track routing decisions and WebSocket streaming volume: `apiserver_websocket_streaming_requests_total` (labels: subresource, `proxy_type`) and `kubelet_streaming_websocket_requests_total` (label: subresource).",
@@ -5183,8 +5208,8 @@
   },
   "136988": {
     "commit": "1baff9532430ff2fc94dd888aeff3817923428ac",
-    "text": "kubectl explain: when a schema or field includes an externalDocs section, it is now displayed as:\n\n\n    EXTERNAL DOCS:\n        <description>\n        URL: <url>\n\n\nThis appears after the DESCRIPTION block for top-level resources and\nafter the field description for individual fields. The section is\nomitted in short mode and when `externalDocs` is absent.",
-    "markdown": "Kubectl explain: when a schema or field includes an externalDocs section, it is now displayed as:\n  \n  \n      EXTERNAL DOCS:\n          <description>\n          URL: <url>\n  \n  \n  This appears after the DESCRIPTION block for top-level resources and\n  after the field description for individual fields. The section is\n  omitted in short mode and when `externalDocs` is absent. ([#136988](https://github.com/kubernetes/kubernetes/pull/136988), [@pedjak](https://github.com/pedjak)) [SIG CLI]",
+    "text": "kubectl explain: when a schema or field includes an externalDocs section, it is now displayed as:\n```EXTERNAL DOCS:\n        <description>\n        URL: <url>\n```\n. This appears after the DESCRIPTION block for top-level resources and\nafter the field description for individual fields. The section is\nomitted in short mode and when `externalDocs` is absent.",
+    "markdown": "Kubectl explain: when a schema or field includes an externalDocs section, it is now displayed as:\n```EXTERNAL DOCS:\n        <description>\n        URL: <url>\n```\n. This appears after the DESCRIPTION block for top-level resources and\n  after the field description for individual fields. The section is\n  omitted in short mode and when `externalDocs` is absent. ([#136988](https://github.com/kubernetes/kubernetes/pull/136988), [@pedjak](https://github.com/pedjak)) [SIG CLI]",
     "author": "pedjak",
     "author_url": "https://github.com/pedjak",
     "pr_url": "https://github.com/kubernetes/kubernetes/pull/136988",

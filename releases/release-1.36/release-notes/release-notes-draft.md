@@ -214,13 +214,11 @@
 - Kubeadm: the preflight check `ContainerRuntimeVersion` validates if the installed container runtime supports the `RuntimeConfig` gRPC method. For older kubelet versions than 1.37, it will return a preflight warning. ([#136898](https://github.com/kubernetes/kubernetes/pull/136898), [@carlory](https://github.com/carlory))
 - Kubeadm: when using `--v=1` or higher log verbosity, print information of the CA certificate used for discovery  when using 'kubeadm join'. ([#137102](https://github.com/kubernetes/kubernetes/pull/137102), [@sivchari](https://github.com/sivchari)) [SIG Cluster Lifecycle]
 - Kubectl explain: when a schema or field includes an externalDocs section, it is now displayed as:
-  
-  
+  ```
       EXTERNAL DOCS:
           <description>
           URL: <url>
-  
-  
+  ```  
   This appears after the DESCRIPTION block for top-level resources and after the field description for individual fields. The section is omitted in short mode and when `externalDocs` is absent. ([#136988](https://github.com/kubernetes/kubernetes/pull/136988), [@pedjak](https://github.com/pedjak)) [SIG CLI]
 - Kubectl: `kubectl describe node` now lists aggregated **ResourceSlices** when the `ResourceSlice` API is present, detailing slice name, driver, and pool. ([#131744](https://github.com/kubernetes/kubernetes/pull/131744), [@ArangoGutierrez](https://github.com/ArangoGutierrez)) [SIG CLI]
 - Kubelet: Deferred the removal of deprecated kubelet configuration flags (and their related fallback behavior) from version 1.36 to 1.37, aligning with the end of containerd v1.7 support. ([#136846](https://github.com/kubernetes/kubernetes/pull/136846), [@carlory](https://github.com/carlory)) [SIG Node and Testing]
