@@ -1,7 +1,7 @@
-pr: 137274
+pr: 137348
 releasenote:
   text: |-
-    Reverted graduation of `maxLength` property.
+    Removed the dead `--bounding-dirs` flag and `BoundingDirs` field from deepcopy-gen.
   sigs:
   - api-machinery
   kinds:

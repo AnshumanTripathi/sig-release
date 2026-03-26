@@ -1,22 +1,14 @@
 pr: 135118
 releasenote:
-  text: 'HPA: Improved scaling to and from zero when HPAScaleToZero feature gate is
-    enabled.'
-  documentation:
-  - description: '[KEP]'
-    url: https://github.com/kubernetes/enhancements/issues/2021
-    type: KEP
-  author: johanneswuerbach
-  areas:
-  - test
-  kinds:
-  - api-change
-  - feature
+  text: |-
+    HPA: Improved scaling to and from zero when the `HPAScaleToZero` feature gate is enabled.
   sigs:
   - apps
   - autoscaling
   - testing
-  feature: true
-  action_required: false
-  do_not_publish: false
+  kinds:
+  - api-change
+  - feature
+  areas:
+  - test
 pr_body: ""
