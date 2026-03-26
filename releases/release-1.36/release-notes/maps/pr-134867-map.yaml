@@ -1,6 +1,6 @@
 pr: 134867
 releasenote:
-  text: Enable nodurations for Kubernetes API Linter
+  text: Enable nodurations for Kubernetes API Linter.
   documentation: []
   author: ShaanveerS
   areas: []

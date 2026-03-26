@@ -1,6 +1,6 @@
 pr: 137274
 releasenote:
-  text: Reverted graduation of maxLength property
+  text: Reverted graduation of maxLength property.
   documentation: []
   author: lalitc375
   areas:
