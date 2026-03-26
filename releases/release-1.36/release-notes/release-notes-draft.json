@@ -101,26 +101,6 @@
     ],
     "feature": true
   },
-  "131846": {
-    "commit": "00bf52745a3cf864134ebb6551d7f79cf52794ee",
-    "text": "Adjusted the expected and actual parameters of the unit test Equal function to the correct order.",
-    "markdown": "Adjusted the expected and actual parameters of the unit test Equal function to the correct order. ([#131846](https://github.com/kubernetes/kubernetes/pull/131846), [@yangjunmyfm192085](https://github.com/yangjunmyfm192085))",
-    "author": "yangjunmyfm192085",
-    "author_url": "https://github.com/yangjunmyfm192085",
-    "pr_url": "https://github.com/kubernetes/kubernetes/pull/131846",
-    "pr_number": 131846,
-    "areas": [
-      "kubelet"
-    ],
-    "kinds": [
-      "cleanup"
-    ],
-    "sigs": [
-      "node"
-    ],
-    "do_not_publish": true,
-    "is_mapped": true
-  },
   "131950": {
     "commit": "18cbbbd34e8ea009934198687de5a0dba23cb22f",
     "text": "`kubelet_pod_start_sli_duration_seconds_bucket` metric now matches pod startup latency SLI/SLO documentation.",
@@ -633,8 +613,8 @@
   },
   "134852": {
     "commit": "a1d638ea114f34497b0bf1f13f072dcb8c355bb0",
-    "text": "Enabled nomaps for Kubernetes API Linter with all the exceptions.",
-    "markdown": "Enabled nomaps for Kubernetes API Linter with all the exceptions. ([#134852](https://github.com/kubernetes/kubernetes/pull/134852), [@MatteoFari](https://github.com/MatteoFari))",
+    "text": "NONE",
+    "markdown": "NONE ([#134852](https://github.com/kubernetes/kubernetes/pull/134852), [@MatteoFari](https://github.com/MatteoFari)) [SIG Architecture]",
     "author": "MatteoFari",
     "author_url": "https://github.com/MatteoFari",
     "pr_url": "https://github.com/kubernetes/kubernetes/pull/134852",
@@ -650,8 +630,8 @@
   },
   "134867": {
     "commit": "9b8aa0b5850cbac7b4fbb48ac4c24e2537605e8e",
-    "text": "Enabled nodurations for Kubernetes API Linter.",
-    "markdown": "Enabled nodurations for Kubernetes API Linter. ([#134867](https://github.com/kubernetes/kubernetes/pull/134867), [@ShaanveerS](https://github.com/ShaanveerS))",
+    "text": "NONE",
+    "markdown": "NONE ([#134867](https://github.com/kubernetes/kubernetes/pull/134867), [@ShaanveerS](https://github.com/ShaanveerS)) [SIG Architecture]",
     "author": "ShaanveerS",
     "author_url": "https://github.com/ShaanveerS",
     "pr_url": "https://github.com/kubernetes/kubernetes/pull/134867",
@@ -1764,8 +1744,8 @@
   },
   "135729": {
     "commit": "9dc55d7d9e9a905dd1a4417e4bf8816ff80e508e",
-    "text": "When kubelet configuration seccompDefault is set to true, e2e test cases should support seccomp default, which is unconfined [LinuxOnly] Executionis  successful.",
-    "markdown": "When kubelet configuration seccompDefault is set to true, e2e test cases should support seccomp default, which is unconfined [LinuxOnly] Executionis  successful. ([#135729](https://github.com/kubernetes/kubernetes/pull/135729), [@yangjunmyfm192085](https://github.com/yangjunmyfm192085)) [SIG Node and Testing]",
+    "text": "\"NONE\"",
+    "markdown": "\"NONE\" ([#135729](https://github.com/kubernetes/kubernetes/pull/135729), [@yangjunmyfm192085](https://github.com/yangjunmyfm192085)) [SIG Node and Testing]",
     "author": "yangjunmyfm192085",
     "author_url": "https://github.com/yangjunmyfm192085",
     "pr_url": "https://github.com/kubernetes/kubernetes/pull/135729",
@@ -2576,8 +2556,8 @@
   },
   "136081": {
     "commit": "1c9180cd453b88ef19cd3735509e1baf29ece390",
-    "text": "Added support for the `+k8s:declarativeValidationNative` marker in `validation-gen`, enabling new API fields to use stable, declaratively-defined validation rules without requiring a handwritten Go fallback. Generated validation errors are now tagged with `.MarkDeclarativeNative()` to allow the runtime to identify natively-validated fields.",
-    "markdown": "Added support for the `+k8s:declarativeValidationNative` marker in `validation-gen`, enabling new API fields to use stable, declaratively-defined validation rules without requiring a handwritten Go fallback. Generated validation errors are now tagged with `.MarkDeclarativeNative()` to allow the runtime to identify natively-validated fields. ([#136081](https://github.com/kubernetes/kubernetes/pull/136081), [@lalitc375](https://github.com/lalitc375))",
+    "text": "NONE",
+    "markdown": "NONE ([#136081](https://github.com/kubernetes/kubernetes/pull/136081), [@lalitc375](https://github.com/lalitc375)) [SIG API Machinery]",
     "author": "lalitc375",
     "author_url": "https://github.com/lalitc375",
     "pr_url": "https://github.com/kubernetes/kubernetes/pull/136081",
